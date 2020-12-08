@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Attributes Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/Attributes" class="dashAnchor"></a>
+
+    <a title="Attributes Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../../index.html">
+          XMLWrangler 5.0.0 Docs
+        </a>
+         (96% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/sersoft-gmbh/xmlwrangler">
+            <img class="header-icon" src="../../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../../index.html">XMLWrangler Reference</a>
+      <img class="carat" src="../../img/carat.png" />
+      Attributes Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/Parser.html">Parser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/Parser/UnknownError.html">– UnknownError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Classes/Parser/MissingRootElementError.html">– MissingRootElementError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/DocumentEncoding.html">DocumentEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/EscapableContent.html">EscapableContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/EscapableContent/Quotes.html">– Quotes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Enums/LookupError.html">LookupError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/ExpressibleByXMLAttributeContent.html">ExpressibleByXMLAttributeContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/ExpressibleByXMLElement.html">ExpressibleByXMLElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/XMLAttributeContentConvertible.html">XMLAttributeContentConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/XMLElementConvertible.html">XMLElementConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/SerializationOptions.html">SerializationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/XMLElement.html">XMLElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/XMLElement/Attributes.html">– Attributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/XMLElement/Content.html">– Content</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Structs/XMLElement/Name.html">– Name</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Typealiases.html#/s:11XMLWrangler32XMLAttributeContentRepresentablea">XMLAttributeContentRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Typealiases.html#/s:11XMLWrangler23XMLElementRepresentablea">XMLElementRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Typealiases.html#/s:11XMLWrangler9XWElementa">XWElement</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>Attributes</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Attributes</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../../Structs/XMLElement.html">XMLElement</a></span><span class="o">.</span><span class="kt">Attributes</span><span class="p">:</span> <span class="kt">ExpressibleByDictionaryLiteral</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../../Structs/XMLElement.html">XMLElement</a></span><span class="o">.</span><span class="kt">Attributes</span><span class="p">:</span> <span class="kt">Sequence</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../../Structs/XMLElement.html">XMLElement</a></span><span class="o">.</span><span class="kt">Attributes</span><span class="p">:</span> <span class="kt">Collection</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../../Structs/XMLElement.html">XMLElement</a></span><span class="o">.</span><span class="kt">Attributes</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">CustomDebugStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Contains the attributes of an <code><a href="../../Structs/XMLElement.html">XMLElement</a></code>.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV3KeyV"></a>
+                    <a name="//apple_ref/swift/Struct/Key" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV3KeyV">Key</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the key of an attribute.</p>
+
+                        <a href="../../Structs/XMLElement/Attributes/Key.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">ExpressibleByStringLiteral</span><span class="p">,</span> <span class="kt"><a href="../../Typealiases.html#/s:11XMLWrangler32XMLAttributeContentRepresentablea">XMLAttributeContentRepresentable</a></span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">CustomDebugStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV7ContentV"></a>
+                    <a name="//apple_ref/swift/Struct/Content" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV7ContentV">Content</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the content of an attribute.</p>
+
+                        <a href="../../Structs/XMLElement/Attributes/Content.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Content</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">ExpressibleByStringLiteral</span><span class="p">,</span> <span class="kt">ExpressibleByStringInterpolation</span><span class="p">,</span> <span class="kt"><a href="../../Typealiases.html#/s:11XMLWrangler32XMLAttributeContentRepresentablea">XMLAttributeContentRepresentable</a></span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">CustomDebugStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV4keysAE4KeysVvp"></a>
+                    <a name="//apple_ref/swift/Property/keys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV4keysAE4KeysVvp">keys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the keys of in this <code>Attributes</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">keys</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Keys.html">Keys</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV8contentsAE8ContentsVvp"></a>
+                    <a name="//apple_ref/swift/Property/contents" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV8contentsAE8ContentsVvp">contents</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the contents of in this <code>Attributes</code>. The <code>contents</code> can be mutated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">contents</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Contents.html">Contents</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesVAEycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesVAEycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an empty attributes list.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV15minimumCapacityAESi_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(minimumCapacity:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV15minimumCapacityAESi_tcfc">init(minimumCapacity:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an empty attributes list that reserves the given capacity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">minimumCapacity</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV22uniqueKeysWithContentsAEx_tcSTRzAE3KeyV_AE7ContentVt7ElementRtzlufc"></a>
+                    <a name="//apple_ref/swift/Method/init(uniqueKeysWithContents:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV22uniqueKeysWithContentsAEx_tcSTRzAE3KeyV_AE7ContentVt7ElementRtzlufc">init(uniqueKeysWithContents:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an attributes list with the given keys and contents.</p>
+<div class="aside aside-precondition">
+    <p class="aside-title">Precondition</p>
+    The keys must be unique. Failure to fulfill this precondition will result in crahes.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">uniqueKeysWithContents</span> <span class="nv">keysAndContents</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">S</span><span class="o">.</span><span class="kt"><a href="../../Structs/XMLElement/Attributes.html#/s:11XMLWrangler10XMLElementV10AttributesV7Elementa">Element</a></span> <span class="o">==</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement.html">XMLElement</a></span><span class="o">.</span><span class="kt">Attributes</span><span class="o">.</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Key.html">Key</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/XMLElement.html">XMLElement</a></span><span class="o">.</span><span class="kt">Attributes</span><span class="o">.</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keysAndContents</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The sequence of unique key and content tuples to initialize from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV_16uniquingKeysWithAEx_AE7ContentVAH_AHtKXEtKcSTRzAE3KeyV_AHt7ElementRtzlufc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:uniquingKeysWith:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV_16uniquingKeysWithAEx_AE7ContentVAH_AHtKXEtKcSTRzAE3KeyV_AHt7ElementRtzlufc">init(_:<wbr>uniquingKeysWith:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an attributes list with the given keys and contents, using a closure for uniquing keys.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Rethrows errors thrown by <code>combine</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">keysAndContents</span><span class="p">:</span> <span class="kt">S</span><span class="p">,</span> <span class="n">uniquingKeysWith</span> <span class="nv">combine</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span> <span class="k">rethrows</span>
+<span class="k">where</span> <span class="kt">S</span><span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">S</span><span class="o">.</span><span class="kt"><a href="../../Structs/XMLElement/Attributes.html#/s:11XMLWrangler10XMLElementV10AttributesV7Elementa">Element</a></span> <span class="o">==</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Key.html">Key</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keysAndContents</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The sequence of key and content tuples to initialize from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>combine</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to use for uniquing keys. The closure is passed the two contents for non-unique keys and should return the content to choose.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesVyAE7ContentVSgAE3KeyVcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesVyAE7ContentVSgAE3KeyVcip">subscript(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns / sets the content for the given key.
+When setting nil, the content is removed for the given key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Key.html">Key</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The content for the given key. <code>nil</code> if none is found.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV_7defaultAE7ContentVAE3KeyV_xyXKtcAA012XMLAttributeE11ConvertibleRzluip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:default:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV_7defaultAE7ContentVAE3KeyV_xyXKtcAA012XMLAttributeE11ConvertibleRzluip">subscript(_:<wbr>default:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns / sets the content for the given key, using a default if the key does not exist.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">subscript</span><span class="o">&lt;</span><span class="kt">Default</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Key.html">Key</a></span><span class="p">,</span> <span class="k">default</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Default</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span> <span class="k">where</span> <span class="kt">Default</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/XMLAttributeContentConvertible.html">XMLAttributeContentConvertible</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to look up the content for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>default</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The default value to use if no value exists for the given <code>key</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The content for the given key. <code>default</code> if none is found.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV6filteryAESbAE3KeyV3key_AE7ContentV7contentt_tKXEKF"></a>
+                    <a name="//apple_ref/swift/Method/filter(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV6filteryAESbAE3KeyV3key_AE7ContentV7contentt_tKXEKF">filter(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Filters the attributes  using the given predicate closure.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Any error thrown by <code>isIncluded</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">filter</span><span class="p">(</span><span class="n">_</span> <span class="nv">isIncluded</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement/Attributes.html#/s:11XMLWrangler10XMLElementV10AttributesV7Elementa">Element</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement.html">XMLElement</a></span><span class="o">.</span><span class="kt">Attributes</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isIncluded</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to execute for each element.
+                    Should return <code>true</code> for elements that should be in the resulting attributes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The filtered attributes. Only elements for which <code>isIncluded</code> returned <code>true</code> are contained.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV13updateContent_6forKeyAE0E0VSgAI_AE0G0VtF"></a>
+                    <a name="//apple_ref/swift/Method/updateContent(_:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV13updateContent_6forKeyAE0E0VSgAI_AE0G0VtF">updateContent(_:<wbr>forKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the content element for a given key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">updateContent</span><span class="p">(</span><span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Key.html">Key</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new content element to store for <code>key</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key for which to update the content element.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The old element of <code>key</code>, if there was one. <code>nil</code> otherwise.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV13removeContent6forKeyAE0E0VSgAE0G0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeContent(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV13removeContent6forKeyAE0E0VSgAE0G0V_tF">removeContent(forKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the content for a given key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeContent</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Key.html">Key</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key for which to remove the content.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The old values of <code>key</code>, if there was one. <code>nil</code> otherwise.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV5merge_16uniquingKeysWithyx_AE7ContentVAI_AItKXEtKSTRzAE3KeyV_AIt7ElementRtzlF"></a>
+                    <a name="//apple_ref/swift/Method/merge(_:uniquingKeysWith:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV5merge_16uniquingKeysWithyx_AE7ContentVAI_AItKXEtKSTRzAE3KeyV_AIt7ElementRtzlF">merge(_:<wbr>uniquingKeysWith:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Merges another sequence of key-content-pairs into the receiving attributes.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Any error thrown by <code>combine</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="n">merge</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">S</span><span class="p">,</span> <span class="n">uniquingKeysWith</span> <span class="nv">combine</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span> <span class="k">rethrows</span>
+<span class="k">where</span> <span class="kt">S</span><span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">S</span><span class="o">.</span><span class="kt"><a href="../../Structs/XMLElement/Attributes.html#/s:11XMLWrangler10XMLElementV10AttributesV7Elementa">Element</a></span> <span class="o">==</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Key.html">Key</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The sequence of key-content-pairs to merge.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>combine</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to use for uniquing keys. Called for each key-conflict with both contents.
+     The returned element is used, the other one discarded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV5merge_16uniquingKeysWithyAE_AE7ContentVAI_AItKXEtKF"></a>
+                    <a name="//apple_ref/swift/Method/merge(_:uniquingKeysWith:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV5merge_16uniquingKeysWithyAE_AE7ContentVAI_AItKXEtKF">merge(_:<wbr>uniquingKeysWith:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Merges another attributes list into the receiving attributes.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Any error thrown by <code>combine</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">merge</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="err">`</span><span class="k">Self</span><span class="err">`</span><span class="p">,</span> <span class="n">uniquingKeysWith</span> <span class="nv">combine</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span> <span class="k">rethrows</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The other attributes list to merge.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>combine</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to use for uniquing keys. Called for each key-conflict with both contents.
+     The returned element is used, the other one discarded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV7merging_16uniquingKeysWithAEx_AE7ContentVAI_AItKXEtKSTRzAE3KeyV_AIt7ElementRtzlF"></a>
+                    <a name="//apple_ref/swift/Method/merging(_:uniquingKeysWith:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV7merging_16uniquingKeysWithAEx_AE7ContentVAI_AItKXEtKSTRzAE3KeyV_AIt7ElementRtzlF">merging(_:<wbr>uniquingKeysWith:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the result of merging another sequence of key-content-pairs with the receiving attributes.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Any error thrown by <code>combine</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">merging</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">S</span><span class="p">,</span> <span class="n">uniquingKeysWith</span> <span class="nv">combine</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="k">Self</span>
+<span class="k">where</span> <span class="kt">S</span><span class="p">:</span> <span class="kt">Sequence</span><span class="p">,</span> <span class="kt">S</span><span class="o">.</span><span class="kt"><a href="../../Structs/XMLElement/Attributes.html#/s:11XMLWrangler10XMLElementV10AttributesV7Elementa">Element</a></span> <span class="o">==</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Key.html">Key</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The sequence of key-content-pairs to merge.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>combine</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to use for uniquing keys. Called for each key-conflict with both contents.
+     The returned element is used, the other one discarded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The merged attributes list.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV7merging_16uniquingKeysWithA2E_AE7ContentVAI_AItKXEtKF"></a>
+                    <a name="//apple_ref/swift/Method/merging(_:uniquingKeysWith:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV7merging_16uniquingKeysWithA2E_AE7ContentVAI_AItKXEtKF">merging(_:<wbr>uniquingKeysWith:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the result of merging another attributes list into the receiving attributes.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Any error thrown by <code>combine</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">merging</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="err">`</span><span class="k">Self</span><span class="err">`</span><span class="p">,</span> <span class="n">uniquingKeysWith</span> <span class="nv">combine</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement.html">XMLElement</a></span><span class="o">.</span><span class="kt">Attributes</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The other attributes list to merge.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>combine</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to use for uniquing keys. Called for each key-conflict with both contents.
+     The returned element is used, the other one discarded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The merged attributes list.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV9removeAll15keepingCapacityySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeAll(keepingCapacity:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV9removeAll15keepingCapacityySb_tF">removeAll(keepingCapacity:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes all key-content pairs from the attributes.
+Calling this method invalidates all indices of the attributes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeAll</span><span class="p">(</span><span class="n">keepingCapacity</span> <span class="nv">keepCapacity</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keepCapacity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the attributes should keep its underlying storage capacity. Defaults to <code>false</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV17dictionaryLiteralA2E3KeyV_AA30XMLAttributeContentConvertible_ptd_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(dictionaryLiteral:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV17dictionaryLiteralA2E3KeyV_AA30XMLAttributeContentConvertible_ptd_tcfc">init(dictionaryLiteral:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inherited</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">dictionaryLiteral</span> <span class="nv">elements</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../../Structs/XMLElement/Attributes/Key.html">Key</a></span><span class="p">,</span> <span class="kt"><a href="../../Protocols/XMLAttributeContentConvertible.html">XMLAttributeContentConvertible</a></span><span class="p">)</span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV7Elementa"></a>
+                    <a name="//apple_ref/swift/Alias/Element" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV7Elementa">Element</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inherited</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Element</span> <span class="o">=</span> <span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Key.html">Key</a></span><span class="p">,</span> <span class="nv">content</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Content.html">Content</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV8IteratorV"></a>
+                    <a name="//apple_ref/swift/Struct/Iterator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV8IteratorV">Iterator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The iterator for iterating over attributes.</p>
+
+                        <a href="../../Structs/XMLElement/Attributes/Iterator.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Iterator</span> <span class="p">:</span> <span class="kt">IteratorProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV19underestimatedCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/underestimatedCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV19underestimatedCountSivp">underestimatedCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inherited</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">underestimatedCount</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV12makeIteratorAE0E0VyF"></a>
+                    <a name="//apple_ref/swift/Method/makeIterator()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV12makeIteratorAE0E0VyF">makeIterator()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inherited</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeIterator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Iterator.html">Iterator</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV5IndexV"></a>
+                    <a name="//apple_ref/swift/Struct/Index" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV5IndexV">Index</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The index for attributes.</p>
+
+                        <a href="../../Structs/XMLElement/Attributes/Index.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Index</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV7isEmptySbvp"></a>
+                    <a name="//apple_ref/swift/Property/isEmpty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV7isEmptySbvp">isEmpty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inherited</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">isEmpty</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV5countSivp"></a>
+                    <a name="//apple_ref/swift/Property/count" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV5countSivp">count</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inherited</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV10startIndexAE0E0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/startIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV10startIndexAE0E0Vvp">startIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inherited</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">startIndex</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Index.html">Index</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV8endIndexAE0E0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/endIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV8endIndexAE0E0Vvp">endIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inherited</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">endIndex</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Index.html">Index</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV5index5afterAE5IndexVAI_tF"></a>
+                    <a name="//apple_ref/swift/Method/index(after:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV5index5afterAE5IndexVAI_tF">index(after:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inherited</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">index</span><span class="p">(</span><span class="n">after</span> <span class="nv">i</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Index.html">Index</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Index.html">Index</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesVyAE3KeyV3key_AE7ContentV7contenttAE5IndexVcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesVyAE3KeyV3key_AE7ContentV7contenttAE5IndexVcip">subscript(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inherited</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">position</span><span class="p">:</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes/Index.html">Index</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/XMLElement/Attributes.html#/s:11XMLWrangler10XMLElementV10AttributesV7Elementa">Element</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s28CustomDebugStringConvertibleP16debugDescriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/debugDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s28CustomDebugStringConvertibleP16debugDescriptionSSvp">debugDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">debugDescription</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV4KeysV"></a>
+                    <a name="//apple_ref/swift/Struct/Keys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV4KeysV">Keys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A collection of keys inside <code><a href="../../Structs/XMLElement/Attributes.html">XMLElement.Attributes</a></code></p>
+
+                        <a href="../../Structs/XMLElement/Attributes/Keys.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Keys</span> <span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">CustomDebugStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler10XMLElementV10AttributesV8ContentsV"></a>
+                    <a name="//apple_ref/swift/Struct/Contents" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler10XMLElementV10AttributesV8ContentsV">Contents</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The (mutable) collection of contents for <code><a href="../../Structs/XMLElement/Attributes.html">XMLElement.Attributes</a></code>.</p>
+
+                        <a href="../../Structs/XMLElement/Attributes/Contents.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Contents</span> <span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">MutableCollection</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">CustomDebugStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://sersoft.de" target="_blank" rel="external">ser.soft GmbH</a>. All rights reserved. (Last updated: 2020-12-08)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

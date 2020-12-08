@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Parser Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/Parser" class="dashAnchor"></a>
+
+    <a title="Parser Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          XMLWrangler 5.0.0 Docs
+        </a>
+         (96% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/sersoft-gmbh/xmlwrangler">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">XMLWrangler Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      Parser Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Parser.html">Parser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Parser/UnknownError.html">– UnknownError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Parser/MissingRootElementError.html">– MissingRootElementError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DocumentEncoding.html">DocumentEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EscapableContent.html">EscapableContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EscapableContent/Quotes.html">– Quotes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LookupError.html">LookupError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ExpressibleByXMLAttributeContent.html">ExpressibleByXMLAttributeContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ExpressibleByXMLElement.html">ExpressibleByXMLElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/XMLAttributeContentConvertible.html">XMLAttributeContentConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/XMLElementConvertible.html">XMLElementConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SerializationOptions.html">SerializationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/XMLElement.html">XMLElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/XMLElement/Attributes.html">– Attributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/XMLElement/Content.html">– Content</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/XMLElement/Name.html">– Name</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:11XMLWrangler32XMLAttributeContentRepresentablea">XMLAttributeContentRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:11XMLWrangler23XMLElementRepresentablea">XMLElementRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:11XMLWrangler9XWElementa">XWElement</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>Parser</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Parser</span> <span class="p">:</span> <span class="kt">ParserDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Responsible for parsing XMLs.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler6ParserC4dataAC10Foundation4DataV_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler6ParserC4dataAC10Foundation4DataV_tcfc">init(data:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new instance using the given <code>Data</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The XML data to parse.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler6ParserC6stringACSS_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(string:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler6ParserC6stringACSS_tcfc">init(string:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new instance using the given string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An XML string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler6ParserC5parseAA10XMLElementVyKF"></a>
+                    <a name="//apple_ref/swift/Method/parse()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler6ParserC5parseAA10XMLElementVyKF">parse()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tries to parse the associated XML data. The parsing is only performed once.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Any error reported by <code>XMLParser</code>. <code><a href="../Classes/Parser/UnknownError.html">Parser.UnknownError</a></code> if parsing failed but no error reported. <code><a href="../Classes/Parser/MissingRootElementError.html">MissingRootElementError</a></code> if parsing succeeded but no root element was parsed.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">parse</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/XMLElement.html">XMLElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The parsed element.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler6ParserC15parseAndConvert2toxxm_tKAA23ExpressibleByXMLElementRzlF"></a>
+                    <a name="//apple_ref/swift/Method/parseAndConvert(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler6ParserC15parseAndConvert2toxxm_tKAA23ExpressibleByXMLElementRzlF">parseAndConvert(to:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tries to parse the associated XML data and convert it to the given target by using it&rsquo;s conformance to <code><a href="../Protocols/ExpressibleByXMLElement.html">ExpressibleByXMLElement</a></code>.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Any error thrown by <code>parse</code> or <code><a href="../Protocols/ExpressibleByXMLElement.html#/s:11XMLWrangler23ExpressibleByXMLElementP3xmlxAA0D0V_tKcfc">ExpressibleByXMLElement.init(xml:)</a></code> of <code>Target.</code>
+
+</div><div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Classes/Parser.html#/s:11XMLWrangler6ParserC5parseAA10XMLElementVyKF">Parser.parse()</a></code> and <code><a href="../Protocols/ExpressibleByXMLElement.html">ExpressibleByXMLElement</a></code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">parseAndConvert</span><span class="o">&lt;</span><span class="kt">Target</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Target</span><span class="o">.</span><span class="k">Type</span> <span class="o">=</span> <span class="kt">Target</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Target</span> <span class="k">where</span> <span class="kt">Target</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ExpressibleByXMLElement.html">ExpressibleByXMLElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The target type to convert to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The parsed element converted to the given target.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Unknown%20Parsing%20Error"></a>
+                <a name="//apple_ref/swift/Section/Unknown Parsing Error" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Unknown%20Parsing%20Error"></a>
+                  <h3 class="section-name"><p>Unknown Parsing Error</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler6ParserC12UnknownErrorV"></a>
+                    <a name="//apple_ref/swift/Struct/UnknownError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler6ParserC12UnknownErrorV">UnknownError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Describes an unknown error.
+Used if parsing fails, but the XMLParser of Foundation does not report an error.</p>
+
+                        <a href="../Classes/Parser/UnknownError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UnknownError</span> <span class="p">:</span> <span class="kt">Error</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11XMLWrangler6ParserC23MissingRootElementErrorV"></a>
+                    <a name="//apple_ref/swift/Struct/MissingRootElementError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11XMLWrangler6ParserC23MissingRootElementErrorV">MissingRootElementError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Describes a failure that caused no element to be parsed.
+Used if parsing succeeds, but no element was parsed.</p>
+
+                        <a href="../Classes/Parser/MissingRootElementError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MissingRootElementError</span> <span class="p">:</span> <span class="kt">Error</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://sersoft.de" target="_blank" rel="external">ser.soft GmbH</a>. All rights reserved. (Last updated: 2020-12-08)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

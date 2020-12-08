@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources/XMLWrangler/Serialization.swift",
+      "line": 34,
+      "symbol": "DocumentEncoding.ascii",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources/XMLWrangler/Serialization.swift",
+      "line": 34,
+      "symbol": "DocumentEncoding.utf16",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources/XMLWrangler/Serialization.swift",
+      "line": 34,
+      "symbol": "DocumentEncoding.utf8",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources/XMLWrangler/Serialization.swift",
+      "line": 60,
+      "symbol": "EscapableContent.Quotes.double",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources/XMLWrangler/Serialization.swift",
+      "line": 60,
+      "symbol": "EscapableContent.Quotes.single",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources/XMLWrangler/Serialization.swift",
+      "line": 83,
+      "symbol": "EscapableContent.attribute(quotes:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources/XMLWrangler/Serialization.swift",
+      "line": 84,
+      "symbol": "EscapableContent.text",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources/XMLWrangler/Serialization.swift",
+      "line": 85,
+      "symbol": "EscapableContent.cdata",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources/XMLWrangler/Serialization.swift",
+      "line": 86,
+      "symbol": "EscapableContent.comment",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources/XMLWrangler/Serialization.swift",
+      "line": 87,
+      "symbol": "EscapableContent.processingInstruction",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/xmlwrangler/xmlwrangler/Sources"
+}
