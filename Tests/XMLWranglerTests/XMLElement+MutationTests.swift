@@ -10,7 +10,7 @@ fileprivate extension XWElement.Content.Element {
 
 final class XMLElement_MutationTests: XCTestCase {
     private var sut: XWElement!
-    
+
     override func setUp() {
         super.setUp()
         sut = XWElement(name: "Root",
@@ -67,6 +67,7 @@ final class XMLElement_MutationTests: XCTestCase {
         struct Convertible: XMLElementConvertible {
             let xml: XWElement
         }
+
         var element = XWElement(name: "base")
         let child = XWElement(name: "child")
         element.append(elementOf: Convertible(xml: child))
@@ -106,27 +107,27 @@ final class XMLElement_MutationTests: XCTestCase {
 
         XCTAssertEqual(element.content, [.element(child1), .element(child2), .element(child3)])
     }
-    
+
     func testMutatingAccessToElementAtInvalidPathThrows() {
         XCTAssertThrowsError(try sut.withMutatingAccess(toElementAt: "Child1", "InexistentChild", do: { _ in XCTFail("Should not be called!") })) {
             XCTAssert($0, is: .missingChild(element: sut.content[0]._element, childName: "InexistentChild"))
         }
     }
-    
+
     func testMutatingAccessToElementAtPath() throws {
         var expectedResult: XWElement = sut
         expectedResult.content[0]._element.content[0]._element.appendElement(XWElement(name: "TestMutating"))
         try sut.withMutatingAccess(toElementAt: ["Child1", "Child1.1"], do: { $0.appendElement(XWElement(name: "TestMutating")) })
         XCTAssertEqual(sut, expectedResult)
     }
-    
+
     func testMutatingAccessToElementAtVariadicPath() throws {
         var expectedResult: XWElement = sut
         expectedResult.content[0]._element.content[0]._element.appendElement(XWElement(name: "TestVariadicMutating"))
         try sut.withMutatingAccess(toElementAt: "Child1", "Child1.1", do: { $0.appendElement(XWElement(name: "TestVariadicMutating")) })
         XCTAssertEqual(sut, expectedResult)
     }
-    
+
     func testReplacingElementAtPath() throws {
         let oldElement = sut.content[0]._element.content[0]._element
         var expectedResult: XWElement = sut
@@ -135,7 +136,7 @@ final class XMLElement_MutationTests: XCTestCase {
         XCTAssertEqual(sut, expectedResult)
         XCTAssertEqual(replacedElement, oldElement)
     }
-    
+
     func testReplacingElementAtVariadicPath() throws {
         let oldElement = sut.content[0]._element.content[0]._element
         var expectedResult: XWElement = sut
@@ -144,15 +145,15 @@ final class XMLElement_MutationTests: XCTestCase {
         XCTAssertEqual(sut, expectedResult)
         XCTAssertEqual(replacedElement, oldElement)
     }
-    
+
     func testRemovingElementAtEmptyPath() {
         XCTAssertNil(try sut.remove(elementAt: []))
     }
-    
+
     func testRemovingInexistentElementAtPath() {
         XCTAssertNil(try sut.remove(elementAt: ["Child1", "DoesNotExist"]))
     }
-    
+
     func testRemovingElementAtPath() throws {
         var expectedResult: XWElement = sut
         let expectedReturnValue = expectedResult.content[0]._element.content.remove(at: 0)._element
@@ -160,7 +161,7 @@ final class XMLElement_MutationTests: XCTestCase {
         XCTAssertEqual(sut, expectedResult)
         XCTAssertEqual(removed, expectedReturnValue)
     }
-    
+
     func testRemovingElementAtVariadicPath() throws {
         var expectedResult: XWElement = sut
         let expectedReturnValue = expectedResult.content[0]._element.content.remove(at: 0)._element

@@ -12,7 +12,7 @@ final class XMLElementContent_LookupTests: XCTestCase {
         XCTAssertEqual(content.allElements, [.init(name: "test"), .init(name: "test2")])
         XCTAssertEqual(content.allStrings, ["abc", "def"])
     }
-    
+
     func testFindingObjectsShallow() {
         let string: XWElement.Content = [.string("testStr")]
         let source: XWElement.Content = [
@@ -24,12 +24,12 @@ final class XMLElementContent_LookupTests: XCTestCase {
             .element(XWElement(name: "hereNot")),
             .element(XWElement(name: "no_test_something")),
         ]
-        
+
         let stringResult = string.find(elementsNamed: "something")
         let cannotFind = source.find(elementsNamed: "not_existent")
         let testResult = source.find(elementsNamed: "test")
         let whateverResult = source.find(elementsNamed: "whatever")
-        
+
         XCTAssertTrue(stringResult.isEmpty)
         XCTAssertTrue(cannotFind.isEmpty)
         XCTAssertEqual(testResult.count, 2)
@@ -37,7 +37,7 @@ final class XMLElementContent_LookupTests: XCTestCase {
         XCTAssertEqual(testResult, [XWElement(name: "test"), XWElement(name: "test")])
         XCTAssertEqual(whateverResult, [XWElement(name: "whatever")])
     }
-    
+
     func testFindingFirstObjectShallow() {
         let string: XWElement.Content = [.string("testStr")]
         let source: XWElement.Content = [
@@ -49,12 +49,12 @@ final class XMLElementContent_LookupTests: XCTestCase {
             .element(XWElement(name: "here")),
             .element(XWElement(name: "test_something")),
         ]
-        
+
         let stringResult = string.findFirst(elementNamed: "something")
         let cannotFind = source.findFirst(elementNamed: "not_existent")
         let testResult = source.findFirst(elementNamed: "test")
         let whateverResult = source.findFirst(elementNamed: "whatever")
-        
+
         XCTAssertNil(stringResult)
         XCTAssertNil(cannotFind)
         XCTAssertNotNil(testResult)
@@ -62,7 +62,7 @@ final class XMLElementContent_LookupTests: XCTestCase {
         XCTAssertEqual(testResult?.content, ["value"])
         XCTAssertTrue(whateverResult?.content.isEmpty ?? false)
     }
-    
+
     func testFindingLastObjectShallow() {
         let string: XWElement.Content = [.string("testStr")]
         let source: XWElement.Content = [
@@ -74,12 +74,12 @@ final class XMLElementContent_LookupTests: XCTestCase {
             .element(XWElement(name: "here")),
             .element(XWElement(name: "test_something")),
         ]
-        
+
         let stringResult = string.findLast(elementNamed: "something")
         let cannotFind = source.findLast(elementNamed: "not_existent")
         let testResult = source.findLast(elementNamed: "test")
         let whateverResult = source.findLast(elementNamed: "whatever")
-        
+
         XCTAssertNil(stringResult)
         XCTAssertNil(cannotFind)
         XCTAssertNotNil(testResult)
@@ -87,7 +87,7 @@ final class XMLElementContent_LookupTests: XCTestCase {
         XCTAssertEqual(testResult?.content, ["value"])
         XCTAssertTrue(whateverResult?.content.isEmpty ?? false)
     }
-    
+
     func testFindingObjectsRecursive() {
         let string: XWElement.Content = [.string("testStr")]
         let source: XWElement.Content = [
@@ -113,12 +113,12 @@ final class XMLElementContent_LookupTests: XCTestCase {
             .element(XWElement(name: "here")),
             .element(XWElement(name: "test_something")),
         ]
-        
+
         let stringResult = string.find(elementsNamed: "something", recursive: true)
         let cannotFind = source.find(elementsNamed: "not_existent", recursive: true)
         let testResult = source.find(elementsNamed: "test", recursive: true)
         let whateverResult = source.find(elementsNamed: "whatever", recursive: true)
-        
+
         XCTAssertTrue(stringResult.isEmpty)
         XCTAssertTrue(cannotFind.isEmpty)
         XCTAssertEqual(testResult.count, 2)
@@ -126,7 +126,7 @@ final class XMLElementContent_LookupTests: XCTestCase {
         XCTAssertEqual(testResult, [XWElement(name: "test", content: "value"), XWElement(name: "test")])
         XCTAssertEqual(whateverResult, [XWElement(name: "whatever")])
     }
-    
+
     func testFindingFirstObjectRecursive() {
         let string: XWElement.Content = [.string("some_string")]
         let source: XWElement.Content = [
@@ -155,12 +155,12 @@ final class XMLElementContent_LookupTests: XCTestCase {
             .element(XWElement(name: "here_is")),
             .element(XWElement(name: "test_something")),
         ]
-        
+
         let stringResult = string.findFirst(elementNamed: .init("something"), recursive: true)
         let cannotFind = source.findFirst(elementNamed: "not_existent", recursive: true)
         let testResult = source.findFirst(elementNamed: "test", recursive: true)
         let whateverResult = source.findFirst(elementNamed: "whatever", recursive: true)
-        
+
         XCTAssertNil(stringResult)
         XCTAssertNil(cannotFind)
         XCTAssertNotNil(testResult)
@@ -169,7 +169,7 @@ final class XMLElementContent_LookupTests: XCTestCase {
         // Make sure we only recurse lazily. We don't want to go into the deepest abyss if we can stay in shallower waters.
         XCTAssertEqual(whateverResult?.content, ["not so deep"])
     }
-    
+
     func testFindingLastObjectRecursive() {
         let string: XWElement.Content = [.string("testStr")]
         let source: XWElement.Content = [
@@ -195,12 +195,12 @@ final class XMLElementContent_LookupTests: XCTestCase {
             .element(XWElement(name: "here", elements: XWElement(name: "test"))),
             .element(XWElement(name: "test_something")),
         ]
-        
+
         let stringResult = string.findLast(elementNamed: "something", recursive: true)
         let cannotFind = source.findLast(elementNamed: "not_existent", recursive: true)
         let testResult = source.findLast(elementNamed: "test", recursive: true)
         let whateverResult = source.findLast(elementNamed: "whatever", recursive: true)
-        
+
         XCTAssertNil(stringResult)
         XCTAssertNil(cannotFind)
         XCTAssertNotNil(testResult)

@@ -9,13 +9,13 @@ final class ErrorsTests: XCTestCase {
         let testName = XWElement.Name(rawValue: "TestName")
         let testStringContent = "Test Content"
         let testType = Int32.self
-        
+
         let missingAttribute = LookupError.missingAttribute(element: testElement, key: testKey)
         let cannotConvertAttribute = LookupError.cannotConvertAttribute(element: testElement, key: testKey, content: testAttributeContent, type: testType)
         let missingContent = LookupError.missingStringContent(element: testElement)
         let missingChild = LookupError.missingChild(element: testElement, childName: testName)
         let cannotConvertContent = LookupError.cannotConvertStringContent(element: testElement, stringContent: testStringContent, type: testType)
-        
+
         XCTAssertEqual(String(describing: missingAttribute),
                        "Element '\(testElement.name.rawValue)' has no attribute '\(testKey.rawValue)'!\nAttributes: \(testElement.attributes)")
         XCTAssertEqual(String(describing: cannotConvertAttribute),

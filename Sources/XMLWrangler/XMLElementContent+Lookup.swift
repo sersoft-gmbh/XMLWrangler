@@ -49,7 +49,9 @@ extension XMLElement.Content {
         let elements = lazyAllElements
         let match = try elements.first(where: predicate)
         guard recursive else { return match }
-        return try match ?? elements.mapFirst { try $0.content.findFirst(recursive: recursive, elementMatching: predicate) }
+        return try match ?? elements.lazy.compactMap {
+            try $0.content.findFirst(recursive: recursive, elementMatching: predicate)
+        }.first
     }
 
     /// Finds the last occurence of an element that matches a given predicate.
@@ -66,7 +68,9 @@ extension XMLElement.Content {
         let elements = lazyAllElements.reversed()
         let match = try elements.first(where: predicate)
         guard recursive else { return match }
-        return try match ?? elements.mapFirst { try $0.content.findLast(recursive: recursive, elementMatching: predicate) }
+        return try match ?? elements.lazy.compactMap {
+            try $0.content.findLast(recursive: recursive, elementMatching: predicate)
+        }.first
     }
 
     /// Searches for elements with a given name. Optionally also recursive.
@@ -104,16 +108,5 @@ extension XMLElement.Content {
     @inlinable
     public func findLast(elementNamed name: XMLElement.Name, recursive: Bool = false) -> XMLElement? {
         findLast(recursive: recursive) { $0.name == name }
-    }
-}
-
-extension Sequence {
-    /// Returns the result of a closure for the first element that the closure returns a non-nil result.
-    /// - Parameter predicate: The predicate applied to the elements in self.
-    /// - Returns: The result of `predicate` for the first element where `predicate` returned a non-nil result. Or nil if that never happens.
-    /// - Throws: Any error thrown by `predicate`.
-    fileprivate func mapFirst<T>(where predicate: (Element) throws -> T?) rethrows -> T? {
-        for elem in self { if let result = try predicate(elem) { return result } }
-        return nil
     }
 }

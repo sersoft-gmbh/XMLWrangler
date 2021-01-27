@@ -98,7 +98,7 @@ final class XMLElementContentElementTests: XCTestCase {
             .string("JKL"),
             .string("MNO"),
         ]
-        let expectedContent1:XWElement.Content = [
+        let expectedContent1: XWElement.Content = [
             .string("ABCDEF"),
             .element(XWElement(name: "elem1")),
             .element(XWElement(name: "elem2")),

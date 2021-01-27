@@ -2,18 +2,17 @@ import XCTest
 @testable import XMLWrangler
 
 final class SerializationTests: XCTestCase {
-    
     func testDocumentEncodingDescription() {
         XCTAssertEqual(String(describing: DocumentEncoding.ascii), "ascii")
         XCTAssertEqual(String(describing: DocumentEncoding.utf8), "utf-8")
         XCTAssertEqual(String(describing: DocumentEncoding.utf16), "utf-16")
     }
-    
+
     func testEscapableContentQuotesDescription() {
         XCTAssertEqual(String(describing: EscapableContent.Quotes.single), "Single quotes")
         XCTAssertEqual(String(describing: EscapableContent.Quotes.double), "Double quotes")
     }
-    
+
     func testEscapableContentDescription() {
         XCTAssertEqual(String(describing: EscapableContent.attribute(quotes: .single)), "Attribute enclosed in single quotes")
         XCTAssertEqual(String(describing: EscapableContent.attribute(quotes: .double)), "Attribute enclosed in double quotes")
@@ -22,7 +21,7 @@ final class SerializationTests: XCTestCase {
         XCTAssertEqual(String(describing: EscapableContent.comment), "Comment")
         XCTAssertEqual(String(describing: EscapableContent.processingInstruction), "Processing instruction")
     }
-    
+
     func testEscapingStrings() {
         let testString = "\"some_kind_of' < string & others > or this"
         
@@ -62,7 +61,7 @@ final class SerializationTests: XCTestCase {
         XCTAssertEqual(comment, expectedComment)
         XCTAssertEqual(processingInstructions, expectedProcessingInstruction)
     }
-    
+
     private let testRoot: XWElement = {
         XWElement(name: "root", attributes: ["some": "key"]) {
             XWElement(name: "first")
@@ -74,7 +73,7 @@ final class SerializationTests: XCTestCase {
             ])
         }
     }()
-    
+
     private let mixedContentRoot = XWElement(name: "root") {
         "Some text is here to check."
         "Which even contains newlines."
@@ -84,7 +83,7 @@ final class SerializationTests: XCTestCase {
         "Let's see how this will end."
         XWElement(name: "other")
     }
-    
+
     func testXMLSerialization() {
         let str1 = String(xml: testRoot)
         let expected1 = "<root some=\"key\"><first/><second>something</second><third><third_one/><third_two third_some=\"value\"/><third_three third_some=\"value\">test this right</third_three></third></root>"
@@ -103,7 +102,7 @@ final class SerializationTests: XCTestCase {
         XCTAssertEqual(str3, expected3)
         XCTAssertEqual(str4, expected4)
     }
-    
+
     func testXMLDocumentSerialization() {
         let str1 = String(xmlDocumentRoot: testRoot, version: Version(major: 1), encoding: .utf8)
         let expected1 = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><root some=\"key\"><first/><second>something</second><third><third_one/><third_two third_some=\"value\"/><third_three third_some=\"value\">test this right</third_three></third></root>"
@@ -130,7 +129,7 @@ final class SerializationTests: XCTestCase {
         XCTAssertEqual(str5, expected5)
         XCTAssertEqual(str6, expected6)
     }
-    
+
     func testMixedContentSerialization() {
         let str1 = String(xml: mixedContentRoot)
         let expected1 = "<root>Some text is here to check.\nWhich even contains newlines.<child>I'm not of much relevance</child><child/>Again we have some more text here.\nLet's see how this will end.<other/></root>"
