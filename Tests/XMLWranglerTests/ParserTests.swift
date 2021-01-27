@@ -15,14 +15,14 @@ final class ParserTests: XCTestCase {
     
     private let testRoot: XWElement = {
         var root = XWElement(name: "root", attributes: ["some": "key"])
-        root.append(element: XWElement(name: "first"))
-        root.append(element: XWElement(name: "second", content: "something"))
-        root.append(element: XWElement(name: "third", elements: [
+        root.appendElement(XWElement(name: "first"))
+        root.appendElement(XWElement(name: "second", content: "something"))
+        root.appendElement(XWElement(name: "third", elements: [
             XWElement(name: "third_one"),
             XWElement(name: "third_two", attributes: ["third_some": "value"]),
             XWElement(name: "third_three", attributes: ["third_some": "value"], content: "test this right")
         ]))
-        root.append(element: XMLElement(name: "fourth", content: "Some <CDATA> value"))
+        root.appendElement(XMLElement(name: "fourth", content: "Some <CDATA> value"))
         return root
     }()
     

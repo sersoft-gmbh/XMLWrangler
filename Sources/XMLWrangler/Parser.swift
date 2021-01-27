@@ -79,7 +79,7 @@ public final class Parser: ParserDelegate {
         stripTrailingNewlinesAndWhitespaces(of: &lastElem)
         if var parent = elementStack.popLast() {
             stripTrailingNewlinesAndWhitespaces(of: &parent)
-            parent.append(element: lastElem)
+            parent.appendElement(lastElem)
             elementStack.append(parent)
         } else {
             parsedRoot = lastElem
@@ -96,7 +96,7 @@ public final class Parser: ParserDelegate {
             let leftTrimmed = string.drop(while: { $0.isNewline || $0.isWhitespace })
             currentElem.content.append(.string(String(leftTrimmed)))
         } else {
-            currentElem.append(string: string.trimmingCharacters(in: .whitespaces))
+            currentElem.appendString(string.trimmingCharacters(in: .whitespaces))
         }
         elementStack.append(currentElem)
     }
@@ -104,7 +104,7 @@ public final class Parser: ParserDelegate {
     fileprivate func parser(_ parser: XMLParser, foundCDATA CDATABlock: Data) {
         guard var currentElem = elementStack.popLast() else { return }
         // TODO: Do we need to support CDATA seperately?
-        currentElem.append(string: String(decoding: CDATABlock, as: UTF8.self))
+        currentElem.appendString(String(decoding: CDATABlock, as: UTF8.self))
         elementStack.append(currentElem)
     }
 }

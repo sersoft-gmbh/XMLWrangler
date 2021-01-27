@@ -1,18 +1,36 @@
 extension XMLElement {
     /// Appends a string to the content.
     /// - Parameter string: The string to append to the content.
+    /// - SeeAlso: `XMLElement.Contents.appendString(_:)`
+    @inlinable
+    public mutating func appendString(_ string: Content.Element.StringPart) {
+        content.appendString(string)
+    }
+
+    /// Appends a string to the content.
+    /// - Parameter string: The string to append to the content.
     /// - SeeAlso: `XMLElement.Contents.append(string:)`
     @inlinable
+    @available(*, deprecated, message: "Use appendString(_:)", renamed: "appendString(_:)")
     public mutating func append(string: Content.Element.StringPart) {
-        content.append(string: string)
+        appendString(string)
+    }
+
+    /// Appends an element to the content.
+    /// - Parameter element: The element to append to the content.
+    /// - SeeAlso: `XMLElement.Content.appendElement(_:)`
+    @inlinable
+    public mutating func appendElement(_ element: XMLElement) {
+        content.appendElement(element)
     }
 
     /// Appends an element to the content.
     /// - Parameter element: The element to append to the content.
     /// - SeeAlso: `XMLElement.Content.append(element:)`
     @inlinable
+    @available(*, deprecated, message: "Use appendElement(_:)", renamed: "appendElement(_:)")
     public mutating func append(element: XMLElement) {
-        content.append(element: element)
+        appendElement(element)
     }
 
     /// Appends the xml element of a convertible type.
@@ -33,8 +51,17 @@ extension XMLElement {
 
     /// Appends one or more elements to the content.
     /// - Parameter elements: The elements to append to the content.
+    /// - SeeAlso: `XMLElement.Content.appendElements(_:)`
+    @inlinable
+    public mutating func appendElements(_ elements: XMLElement...) {
+        append(contentsOf: elements)
+    }
+
+    /// Appends one or more elements to the content.
+    /// - Parameter elements: The elements to append to the content.
     /// - SeeAlso: `XMLElement.Content.append(elements:)`
     @inlinable
+    @available(*, deprecated, message: "Use appendElements(_:)", renamed: "appendElements(_:)")
     public mutating func append(elements: XMLElement...) {
         append(contentsOf: elements)
     }
