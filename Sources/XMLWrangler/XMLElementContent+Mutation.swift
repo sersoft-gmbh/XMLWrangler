@@ -1,28 +1,13 @@
 extension XMLElement.Content {
     @usableFromInline
-    mutating func _appendString<S: StringProtocol>(_ string: S, separator: @autoclosure () -> Character?) {
+    mutating func _appendString<S: StringProtocol>(_ string: S, separator _: @autoclosure () -> Character?) {
         if !storage.isEmpty,
            case let lastIndex = storage.index(endIndex, offsetBy: -1),
            case .string(let str) = storage[lastIndex] {
-            var newString = str
-            if let separator = separator() {
-                newString.append(separator)
-            }
-            storage[lastIndex] = .string(newString + string)
+            storage[lastIndex] = .string(str + string)
         } else {
             storage.append(.string(String(string)))
         }
-    }
-
-    @usableFromInline
-    mutating func _append(_ element: Element,
-                          autoCompress: Bool,
-                          stringSeparator: @autoclosure () -> Character?) {
-        guard autoCompress, case .string(let str) = element else {
-            storage.append(element)
-            return
-        }
-        _appendString(str, separator: stringSeparator())
     }
 
     /// Appends either a new `.string` element, or if the last one is already `.string`, appends `string` to the last one.
